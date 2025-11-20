@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff69b4;
+            display: none;
+        }
+        p {
+            font-size: 1.5em;
+            display: none;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 15px 30px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message" class="hidden">Happy Birthday! I Love You! ❤️</h1>
+    <p id="extra" class="hidden">You're the best thing that's ever happened to me. Hope your day is amazing!</p>
+    <button onclick="revealSurprise()">Click for a Surprise!</button>
+
+    <script>
+        function revealSurprise() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('extra').style.display = 'block';
+            // Optional: Add confetti or sound here if you want to enhance it
+        }
+    </script>
+</body>
+</html>
